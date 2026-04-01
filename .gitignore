@@ -1,0 +1,47 @@
+# Ignore everything by default if strictly only code is wanted, 
+# but a blacklist approach is usually safer to not miss config files.
+# Here we ignore all non-code files and folders based on your request.
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# PyTorch/Models
+*.pt
+*.pth
+*.ckpt
+
+# Data, Logs and Output
+*.log
+cmdf_s32_run/
+log/
+Dataset/
+Data/
+
+# Documents, Papers, and Media
+*.pdf
+*.txt
+*.xml
+*.png
+*.md
+lit_pdfs/
+
+# Except README
+!README.md
+!Beam-Prediction--CMDF/README.md
+
+# IDEs and OS files
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
